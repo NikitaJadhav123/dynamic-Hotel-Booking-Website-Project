@@ -8,17 +8,32 @@
       <div>
 
         <div>
-          <img src="assests/images/logo.png" alt="logo" height="100px" width="150px">  
-          <a href="login.html" target="_blank">Login</a>
+          <a href="index.html" target="_self">
+          <img src="assests/images/logo.png" alt="logo" height="100px" width="150px"> </a>
+          <a href="login.html" target="_self">Login</a>
          </br></div>
       
       <div>
     
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> </br>  
   
-        <a href="payment.html" target="_blank">
-        Book Now
-        </a>
+
+        <form method="GET" action="payment.html" target="_self" autocomplete="off">
+          <label for="adults">Adults:</label>
+          <input type="number" id="adults" min="1" name="adults" required ></br>
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required/></br>
+          <label for="fromDate" >From Date:</label>
+          <input type="date" id="fromDate" name="fromDate" required/></br>
+          <label for="toDate">To Date:</label>
+          <input type="date" id="toDate" name="toDate" required/></br>
+          <label for="total">Total:</label>
+          <input type="number" id="total" name="total" required disabled></br>
+          <a href="payment.html" target="_self">
+          <button id="bookNow">Book Now</button> </a>
+        </form>  
+       
+      
 
         <h2>Radisson Blu Hotel</h2>
           <span>  
@@ -42,7 +57,7 @@
       </div>
 
       <div>
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a href="contact.html" target="_self">Contact Us</a>
               </br>
               <a href="https://www.facebook.com" target="_blank"> 
                 <img src="assests/images/facebook.png" height="20px" width="22px"> </a>
