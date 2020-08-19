@@ -1,0 +1,14 @@
+body,html{
+    height: 100%;
+    width: 100%;
+  }
+
+.imgstyle{
+    height: 60px;
+    width: 60px;
+  }
+
+.footerimg{
+    height: 20px;
+    width: 22px;
+  }
