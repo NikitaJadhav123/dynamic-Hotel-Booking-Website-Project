@@ -7,12 +7,20 @@
     scroll-behavior: smooth;
   }
 
-#map-view{
-    scroll-behavior: smooth;
+.map-view{
+   scroll-behavior: smooth;
+   display: none;
   } 
 
 .imagesView{
    margin: 2%;
    background-color: rgb(132,136,139); 
    width: 40%;
+   float: left;
 }  
+
+.viewSty{
+  font-weight: bold;
+  text-decoration: none; 
+  color:black
+}
