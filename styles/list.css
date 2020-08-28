@@ -1,10 +1,12 @@
 .hotelimg{
     height: 200px;
     width: 250px;
+
   } 
 
 #list-view{
     scroll-behavior: smooth;
+
   }
 
 .map-view{
@@ -14,9 +16,10 @@
 
 .imagesView{
    margin: 2%;
-   background-color: rgb(132,136,139); 
    width: 40%;
    float: left;
+   display: flex;
+   background-color: lightgray;
 }  
 
 .viewSty{

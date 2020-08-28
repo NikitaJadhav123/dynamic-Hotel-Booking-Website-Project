@@ -1,12 +1,65 @@
 .placeimg{
     height: 150px;
     width: 150px;
-    padding: 4%;
     border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+  }
+
+  .placeimg:hover{
+    filter: brightness(50%); 
     
   }
 
+  .placeimg:hover + .text1Sty {
+    visibility: visible;
+   }
+
+  .placeimg:hover + .text2Sty {
+    visibility: visible;
+   }
+
+   .placeimg:hover + .text3Sty {
+    visibility: visible;
+   }
+
+   .placeimg:hover + .text4Sty {
+    visibility: visible;
+   }
+
   
+  .text1Sty{
+    position: absolute;
+    bottom: 100px;
+    left:180px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+  .text2Sty{
+    position: absolute;
+    bottom: 100px;
+    left:460px;
+    color: #f1f1f1; 
+    visibility: hidden;
+  }
+
+  .text3Sty{
+    position: absolute;
+    bottom: 100px;
+    left:710px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+  .text4Sty{
+    position: absolute;
+    bottom: 100px;
+    left:1000px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+    
   #backgroundCity{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
     height: 380px;
@@ -25,6 +78,7 @@
     width: 25%;
     border: 1px solid transparent;
     background-color: #f1f1f1; 
+    outline: none;
     padding : 10px; 
     font-size: 16px; 
     border-radius: 12px; 
