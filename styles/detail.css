@@ -7,7 +7,6 @@
 }
 
 .imgDiv{
-
     display: flex; 
     flex-grow: 3; 
     justify-content: center; 
@@ -34,11 +33,11 @@
    border-bottom: 6px solid;
    border-left: 6px solid;
    transform: rotate(45deg);
-    margin-left: -300px; 
-    color:rosybrown;
-    height: 55px;
-    width: 55px;
-
+   margin-left: -300px; 
+   color:rosybrown;
+   height: 55px;
+   width: 55px;
+   position: relative;
 }
 
 .next-icon{
