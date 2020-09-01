@@ -29,6 +29,21 @@
 }
 
 
+.btn-primary{
+    color:green;
+    background-color: #e0e0e0;
+    border-color: green;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:checked, .btn-primary:active, .open>.dropdown-toggle.btn-primary{
+
+    color:#fff;
+    background-color:green ;
+    border-color: green;
+}
+
+
 .listSty{
     display: flex; 
     padding: 1em;

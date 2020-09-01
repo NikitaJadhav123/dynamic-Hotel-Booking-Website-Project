@@ -9,10 +9,7 @@
 
   }
 
-.map-view{
-   scroll-behavior: smooth;
-   display: none;
-  } 
+
 
 .imagesView{
    margin: 2%;
@@ -21,6 +18,12 @@
    display: flex;
    background-color: lightgray;
 }  
+
+
+.imagesView:hover{
+    background-color: rosybrown;
+}
+
 
 .viewSty{
   font-weight: bold;

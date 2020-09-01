@@ -28,8 +28,8 @@
 
   
   .text1Sty{
-    position: absolute;
-    bottom: 100px;
+    position: fixed;
+    bottom: 150px;
     left:180px;
     color: #f1f1f1;
     visibility: hidden;
@@ -86,3 +86,21 @@
   }
 
   
+.listSty{
+  display: flex; 
+  padding: 0em;
+  justify-content: center;
+}
+
+.labelSty{
+ flex:0.7;
+}
+
+.inputSty{
+ width:60%;
+}
+
+.main-container{
+  
+  height: 750px;
+}

@@ -2,23 +2,30 @@
 <html>
     <head>
        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Index</title>
-       <link href="styles/common.css" rel="stylesheet"/>
-       <link href="styles/index.css" rel="stylesheet"/>
        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
-      
-    </head>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+       <link href="styles/index.css" rel="stylesheet"/>
+
+       <link href="styles/common.css" rel="stylesheet"/>
+   
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+      </head>
 
     <body>
-      <div>
+   
+      <div class="main-container">
+         
+        <header id="header"></header>
 
-        <header>
-          <img class="imgstyle" src="assests/images/logo.png" alt="logo">  
-          <a href="login.html" target="_self" class="loginStyle">Login</a>
-          </br></header>
-    
-        <!--<div style="overflow-y: scroll; width: 100%;  overflow: hidden; position: absolute; height: 750px; display: flex; ">-->
-        <div style="flex-direction: column;   height: 700px; display: flex;"> 
+        <div style="flex-direction: column; display: flex;"> 
           <div id="backgroundCity" >
           <input id="searchBar" type="text" name="city"  id="city" placeholder="City"/>
           </div>
@@ -40,33 +47,16 @@
           <img class="placeimg" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
           <p class="text4Sty">Kolkata</p>   </a> 
         </div>
-      </br> </br> </br>
+      </br> 
+          <a href="index.html" target="_self" style="display:flex; justify-content:center; margin-top: 2%; text-decoration: none;"><button type="button" class="btn btn-secondary">View More</button></a>
           
-          <a href="index.html" target="_self" style=" text-decoration: none;"><p style=" text-align: center; margin:auto; color: black;">View more >></p></a>
-          
-    </div>
-    
-      <footer>
-        <a href="contact.html" target="_self" class="contactStyle">Contact Us</a>
-       
-        </br>
-        <div class="iconSty"> 
-        <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;" > 
-        <img class="footerimg" src="assests/images/facebook.png"> </a>
-
-        <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;"> 
-        <img class="footerimg" src="assests/images/instagram.png"> </a>
-        
-        <a href="https://twitter.com" target="_blank" style="text-decoration: none;"> 
-        <img class="footerimg" src="assests/images/twitter.png"> </a>
-        </div> 
-        </br> 
-        
-        <p class="copyrightSty">© 2020 ROOM SEARCH PVT. LTD.</p>
-
-      </footer>
+     </div>
+  
+       <footer id="footer"></footer>
 
     </div>
+
+    <script src="scripts/common.js"></script>
   </body>
 
 </html> 

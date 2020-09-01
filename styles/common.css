@@ -6,6 +6,9 @@ body,html{
   font-family: 'Ubuntu',sans-serif;
 }
 
+body.modal-open div.modal-backdrop { 
+  z-index: -1; 
+}
 
 header{
     display: flex;
@@ -13,7 +16,7 @@ header{
     position: fixed;
     width:100%;
     top: 0;
-    z-index: 80;
+    z-index: 1;
     
 }  
 
@@ -25,7 +28,7 @@ footer{
     bottom: 0;
     height: 60px;
     align-items: center;
- 
+    z-index: 1;
     
 }
 
@@ -39,7 +42,7 @@ footer{
 .loginStyle{
   margin-right: 2%;
   right: 0%;
-  margin-top: 20px;
+  margin-top: 10px;
   text-decoration: none;
   position: absolute;
   color: black;
@@ -55,7 +58,7 @@ footer{
 
 .contactStyle{
   bottom:32%;
-  margin-left: 2%;
+  margin-left: 4%;
   text-decoration: none;
   position: absolute; 
   color: black;
