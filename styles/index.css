@@ -3,7 +3,9 @@
     width: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
+    
   }
+
 
   .placeimg:hover{
     filter: brightness(50%); 
@@ -26,40 +28,93 @@
     visibility: visible;
    }
 
+   .placeimg:hover + .text5Sty {
+    visibility: visible;
+   }
+
+  .placeimg:hover + .text6Sty {
+    visibility: visible;
+   }
+
+   .placeimg:hover + .text7Sty {
+    visibility: visible;
+   }
+
+   .placeimg:hover + .text8Sty {
+    visibility: visible;
+   }
+
+
+ 
   
   .text1Sty{
-    position: fixed;
-    bottom: 150px;
-    left:180px;
+    position: absolute;
+    bottom: 25%;
+    left:200px;
     color: #f1f1f1;
     visibility: hidden;
   }
 
   .text2Sty{
     position: absolute;
-    bottom: 100px;
-    left:460px;
+    bottom: 25%;
+    left:500px;
     color: #f1f1f1; 
     visibility: hidden;
   }
 
   .text3Sty{
     position: absolute;
-    bottom: 100px;
-    left:710px;
+    bottom: 25%;
+    left:775px;
     color: #f1f1f1;
     visibility: hidden;
   }
 
   .text4Sty{
     position: absolute;
-    bottom: 100px;
-    left:1000px;
+    bottom: 25%;
+    left:1100px;
     color: #f1f1f1;
     visibility: hidden;
   }
 
-    
+  .text5Sty{
+    position: absolute;
+    bottom: -14%;
+    left:200px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+  .text6Sty{
+    position: absolute;
+    bottom: -14%;
+    left:500px;
+    color: #f1f1f1; 
+    visibility: hidden;
+  }
+
+  .text7Sty{
+    position: absolute;
+    bottom: -14%;
+    left:775px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+  .text8Sty{
+    position: absolute;
+    bottom: -14%;
+    left:1100px;
+    color: #f1f1f1;
+    visibility: hidden;
+  }
+
+
+
+
+  
   #backgroundCity{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
     height: 380px;
@@ -102,5 +157,6 @@
 
 .main-container{
   
-  height: 750px;
+  height: 1000px;
 }
+
