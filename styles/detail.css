@@ -29,6 +29,37 @@
 }
 
 
+.prev-icon{
+ 
+   border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(45deg);
+    margin-left: -300px; 
+    color:rosybrown;
+    height: 55px;
+    width: 55px;
+
+}
+
+.next-icon{
+    
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    margin-right: -300px;
+    transform: rotate(-135deg);
+    color:rosybrown;
+    height: 55px;
+    width: 55px;
+
+}
+
+
+
+.checked{
+   color:  orange;
+}
+
+
 .btn-primary{
     color:green;
     background-color: #e0e0e0;

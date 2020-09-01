@@ -10,6 +10,11 @@
   }
 
 
+  .checked{
+    color: orange;
+  }
+
+
 
 .imagesView{
    margin: 2%;
