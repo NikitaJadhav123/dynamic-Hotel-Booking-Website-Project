@@ -18,7 +18,15 @@
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    
-           
+       
+       <style>
+        #more {
+         display:none;
+         margin-top: 7%; 
+         justify-content: space-evenly; 
+       }
+       </style>
+
        <style>
        @media screen and (min-width: 576px) and (max-width: 768px) {
               #backgroundCity{
@@ -73,7 +81,7 @@
 
         </div>
 
-        <div style="display:flex; margin-top: 7%; justify-content: space-evenly; ">  
+        <div id="more">  
          
           <a href="list.html" class="aStyle" target="_self">
           <img class="placeimg" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">  
@@ -95,7 +103,7 @@
 
         
       </br> 
-          <a href="index.html" target="_self" style="display:flex; justify-content:center; margin-top: 2%; text-decoration: none;"><button type="button" class="btn btn-secondary">View More</button></a>
+          <a href="index.html" target="_self" style=" display: flex;justify-content:center; margin-top: 2%; text-decoration: none;"><button type="button" id="vm" onclick="myFunction()"  class="btn btn-secondary">View More</button></a>
           
      </div>
   
@@ -103,6 +111,21 @@
 
     </div>
 
+    <script>
+      function myFunction() {
+     var toggle=document.getElementById("vm");
+    if (toggle.textContent === "View More") {
+      document.getElementById("more").style.display="flex";
+      toggle.innerText="View Less";
+    
+   
+  } else {
+    document.getElementById("more").style.display="none";
+    toggle.innerText="View More";
+  }
+}
+      
+      </script>
     <script src="scripts/common.js"></script>
   </body>
 

@@ -2,7 +2,7 @@
    var inputUsername=document.getElementById("username");
    var inputPassword=document.getElementById("password");
    localStorage.setItem("username",inputUsername.value);
-   localStorage.setItem("passowrd",inputPassword.value);
+   localStorage.setItem("password",inputPassword.value);
  };
 
  function userLogin(){
@@ -27,11 +27,12 @@
      if(btn1.value=="logout"){
       btn1.value = "login"; 
       btn1.innerText="LOGIN";
+      localStorage.clear();
      }
 
  }
 
- 
+
 
 let displayHeaderTemplate = () => {
    let headerTemplate = `<img class="imgstyle" src="assests/images/logo.png" alt="logo"/>  

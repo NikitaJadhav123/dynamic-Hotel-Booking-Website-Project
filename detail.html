@@ -58,24 +58,24 @@
           <ul style="list-style-type: none;">
           <li class="listSty" >
           <label class="labelSty" for="adults">Adults:</label>
-          <input class="inputSty" type="number" id="adults" min="1" name="adults" required ></br> </li>
+          <input class="inputSty" type="number" id="adults" min="1" onchange="cal()"  name="adults" required ></br> </li>
          
           <li class="listSty" >
           <label class="labelSty" for="name">Name: </label>
-          <input class="inputSty" type="text" id="name" name="name" required/></br> </li>
+          <input class="inputSty" type="text" id="name"  name="name" required/></br> </li>
          
           <li class="listSty">
           <label class="labelSty"  for="fromDate" >From Date:</label>
-          <input class="inputSty" type="date" id="fromDate" name="fromDate" required/></br> </li>
+          <input class="inputSty" type="date" id="fromDate" name="fromDate" onchange="cal()" required/></br> </li>
          
           <li class="listSty">
           <label class="labelSty" for="toDate">To Date:</label>
-          <input class="inputSty" type="date" id="toDate" name="toDate" required/></br> </li>
+          <input class="inputSty" type="date" id="toDate"  name="toDate" onchange="cal()" required/></br> </li>
    
           
           <li class="listSty">
           <label class="labelSty" for="total">Total:</label>
-          <input class="inputSty" type="number" id="total" name="total" required disabled></br> </li>
+          <input class="inputSty" type="number" id="total" class="total" name="total" required ></br> </li>
           
           <li style="display: flex; padding: 1em; justify-content: center;">
           <a href="payment.html" target="_self">
@@ -116,6 +116,8 @@
       
     
     <script src="scripts/common.js"></script>
+    
+    <script src="scripts/detail.js"></script>
 
   </body>
 
