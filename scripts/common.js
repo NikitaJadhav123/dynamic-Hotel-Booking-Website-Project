@@ -1,8 +1,43 @@
+ function store(){
+   var inputUsername=document.getElementById("username");
+   var inputPassword=document.getElementById("password");
+   localStorage.setItem("username",inputUsername.value);
+   localStorage.setItem("passowrd",inputPassword.value);
+ };
+
+ function userLogin(){
+   store();
+   let username=document.getElementById("username").value;
+   let password=document.getElementById("password").value;
+   sessionStorage.username = 'admin';
+   sessionStorage.isLogin = true;
+   if(username==='admin' && password === 'admin'){
+     var r=confirm('Successfully loggedin');
+   }
+   if(r==true){
+    var btn = document.getElementById("loginM");
+    btn.value = "logout"; 
+    btn.innerText="LOGOUT"
+   }
+
+ }
+
+ function logoutFunc(){
+     var btn1=document.getElementById("loginM");    
+     if(btn1.value=="logout"){
+      btn1.value = "login"; 
+      btn1.innerText="LOGIN";
+     }
+
+ }
+
+ 
+
 let displayHeaderTemplate = () => {
    let headerTemplate = `<img class="imgstyle" src="assests/images/logo.png" alt="logo"/>  
    <button type="button" 
    style="margin-right: 2%; right: 0%;margin-top: 10px;text-decoration: none;position: absolute;" 
-   class="btn btn-light" data-toggle="modal" data-target="#loginModal">
+   class="btn btn-light" id="loginM" value="login" onclick="logoutFunc()" data-toggle="modal" data-target="#loginModal">
   LOGIN
 </button>
 
@@ -36,7 +71,7 @@ let displayHeaderTemplate = () => {
 
       <!-- Modal footer -->
       <div class="modal-footer" style="display:flex; justify-content:center;">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" id="login">Login</button>
+        <button type="button" class="btn btn-primary" onclick="userLogin()" data-dismiss="modal" id="login">Login</button>
       </div>
 
     </div>
