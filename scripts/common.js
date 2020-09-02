@@ -12,12 +12,13 @@
    sessionStorage.username = 'admin';
    sessionStorage.isLogin = true;
    if(username==='admin' && password === 'admin'){
-     var r=confirm('Successfully loggedin');
-   }
-   if(r==true){
+      confirm('Successfully loggedin');
+
     var btn = document.getElementById("loginM");
     btn.value = "logout"; 
-    btn.innerText="LOGOUT"
+    btn.innerText="LOGOUT";
+    document.getElementById("payNow").disabled=false;
+    
    }
 
  }
@@ -28,6 +29,7 @@
       btn1.value = "login"; 
       btn1.innerText="LOGIN";
       localStorage.clear();
+      document.getElementById("payNow").disabled=true;
      }
 
  }
@@ -35,7 +37,7 @@
 
 
 let displayHeaderTemplate = () => {
-   let headerTemplate = `<img class="imgstyle" src="assests/images/logo.png" alt="logo"/>  
+   let headerTemplate = `<a href="index.html"><img class="imgstyle" src="assests/images/logo.png" alt="logo"/></a>  
    <button type="button" 
    style="margin-right: 2%; right: 0%;margin-top: 10px;text-decoration: none;position: absolute;" 
    class="btn btn-light" id="loginM" value="login" onclick="logoutFunc()" data-toggle="modal" data-target="#loginModal">
